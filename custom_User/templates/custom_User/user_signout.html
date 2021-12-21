@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="signin-page">
+    <div class="form-box">
+        <form method="POST">
+        	{% csrf_token %}
+            <div class="form-btn">
+                <button type="submit" name="button" class="btn">Logout</button>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock content %}
